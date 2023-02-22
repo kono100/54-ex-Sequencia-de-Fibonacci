@@ -1,0 +1,19 @@
+'''54. Faça uma função que receba um número inteiro por parâmetro e
+ retorne o equivalente a este número na série de Fibonacci;'''
+
+print('<--- SEQUêNCIA DE FIBONACCI --->\n')
+
+n = int(input('Quantos Termos vc quer mostrar? '))
+print()
+t1 = 0
+t2 = 1
+print(f'{t1} -> {t2}', end='')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    print(f' -> {t3}', end='')
+    t1 = t2
+    t2 = t3
+    cont += 1
+print(' -> FIM!')
+print()
